@@ -1,0 +1,177 @@
+* {
+    color: #fff;
+}
+
+body {
+    background-image: url(image/bg.png);
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    background: #333333;
+    /* height: 461px; */
+    border-top: #DCCC01 solid 10px;
+}
+
+footer ul {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+footer ul li a {
+    color: #BBBBBB;
+}
+
+h1 {
+    background-image: url(image/heading_shape_blue.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card {
+    /* height: 20rem; */
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #464646;
+    border: 1px #707070 solid
+}
+
+.card-text,
+.badge-primary {
+    color: #DCCC01;
+}
+
+.card-text-product {
+    color: #1CBFBC;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.inner-card {
+    background-color: #707070;
+}
+
+.card .btn,
+.profile-information .btn,
+.btn-outline-warning,
+.artwork-submit,
+.btn-outline-primary {
+    width: 100%;
+    border-radius: 25px !important;
+    font-weight: bold;
+}
+
+.card-price strong {
+    color: #1CBFBC;
+}
+
+.card-price p {
+    display: inline;
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+.card-price p input {
+    background-color: #333232;
+    width: 64px;
+    height: 25px;
+    border: none;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+/* your cart */
+.price-details {
+    text-transform: uppercase;
+    font-weight: lighter;
+    border-bottom: #DCCC01 solid 1px;
+    padding-bottom: 1rem;
+}
+
+.subtotal {
+    background-color: #fff;
+    color: #0078CC;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.btn-square {
+    border-radius: 0px !important;
+    width: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.input-square {
+    border-radius: 0px !important;
+}
+
+/* end your cart */
+/* user profile */
+.profile-information input {
+    border-radius: 15px;
+    border: solid 1px #F1F1F1;
+}
+
+.input-group-text {
+    background-color: #fff;
+    color: black;
+    border: none;
+}
+
+/* user profile */
+.banner {
+    width: 100%;
+    box-shadow: inset 0 0 99999px rgb(220, 204, 1, 0.4);
+    background-image: url(image/banner.png);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.div-skew {
+    position: relative;
+    margin-top: 15rem;
+    height: 10rem;
+}
+
+.div-skew img {
+    position: relative;
+    top: -10rem;
+}
+
+.div-skew::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 200px;
+    top: -25px;
+    left: 0;
+    z-index: -1;
+    background: #0d6efd;
+    transform: skew(0deg, -5deg);
+}
+
+.btn-outline-warning,
+.btn-outline-primary {
+    width: 20rem;
+}
+
+.btn-outline-warning {
+    border: #DCCC01 solid 2px;
+}
+.btn-outline-primary{    
+    border: #0d6efd solid 2px
+}
+.artwork-submit {
+    width: 90%
+}
