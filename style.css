@@ -175,3 +175,47 @@ h1 {
 .artwork-submit {
     width: 90%
 }
+/* radio button  */
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #1CBFBC;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #1CBFBC;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #DCCC01;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #1CBFBC;
+}
+/* radio button end */
+.social-btn .btn {
+    border-radius: 0 !important;
+    width: 70px;
+    font-size: 5px;
+}
+
+.triangle-flip{
+    transform: rotate(180deg);
+    margin-left:5px ;    
+}
+.like-price{
+    color: #1090F2;
+    font-weight: bolder;
+    font-size: 35px;
+}
