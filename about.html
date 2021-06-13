@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+    <style>
+        .div-skew::before {
+            padding: 0;
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 6rem;
+            top: -3rem;
+            left: 0px;
+            z-index: -1;
+            background: #0d6efd;
+            transform: skew(0deg, -10deg);
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .div-skew {
+            position: relative;
+            margin-top: 5rem;
+            margin-bottom: 10rem;
+            height: inherit;
+
+        }
+
+        .div-skew::after {
+            padding: 0;
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 6rem;
+            bottom: -2.5rem;
+            left: 0px;
+            z-index: -1;
+            background: #0d6efd;
+            transform: skew(0deg, -10deg);
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .div-skew img {
+            position: static;
+        }
+
+        .rev-skew::before {
+            transform: skew(0deg, 10deg);
+            background: #E7D703;
+        }
+
+        .rev-skew::after {
+            transform: skew(0deg, 10deg);
+            background: #E7D703;
+        }
+
+        .crazy-image-holder img { 
+            margin-left: 1rem;                       
+        }
+
+        .crazy-image-holder::after {
+            content: '';
+            position: absolute;
+            left: 10rem;
+            width: 16rem;
+            height: 9rem;
+            z-index: -1;
+            background: #0d6efd;
+            transform: rotate(-8deg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/mobile_logo.svg" alt="" width="137" height="53">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <img src="image/mobile_menu_bar.svg" alt="" srcset="" width="40">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container p-3 text-center  justify-content-center">
+        <div class="crazy-image-holder mt-5">
+            <h1 class="d-inline">
+                About Us
+            </h1>
+            <img src="image/fortnite_game_main-1280x720.png" class="img-responsive" alt="Image">
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <h4 class="text-center mt-5 "><img src="image/Path 63.svg">Our Idea<img class="triangle-flip"
+                src="image/Path 63.svg"></h4>
+        <img src="image/bg au.png" alt="">
+        <p class="text-center">
+            Fikra, which means “Idea” in Arabic, was visualized in 2010 as a company that would promote creative and
+            youthful
+            activities in Kuwait and the Middle East. Most importantly it targeted the gaming industry and set
+            out to lay the foundation for the Kuwaiti gaming industry and build it; from artists and programmers, to
+            cosplayers
+            and
+            pro gamers and everything in between.
+        </p>
+        <p class="text-center">
+            And on a fateful October in 2011, an opportunity that came suddenly became Fikra’s first event. Although the
+            event
+            was
+            not planned, budgeted, or marketed, it was a massive success and Fikra became known
+            worldwide as a result.
+        </p>
+    </div>
+    <div class="div-skew bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h6 class="text-center mt-5 "><img src="image/Path 63.svg">Beginnings<img class="triangle-flip"
+                            src="image/Path 63.svg">
+                    </h6>
+                    <h2 class="text-warning text-center" style="font-size: 30px;font-weight: bold;"> First Steps
+                    </h2>
+                </div>
+                <div class=" mt-2 col-12 ">
+                    <p>Kuwait already had a very strong fighting game community since the 1990’s. Fikra decided to start
+                        with fighting game
+                        tournaments as a way of growing the local community and getting experience for much bigger
+                        events that would come
+                        later in Fikra’s future.
+
+                    </p>
+                    <p>In addition to this, Fikra was the first to organize a major gaming event with live broadcast and
+                        commentary, as well as
+                        sending Kuwaiti players to countries such as Australia and Japan to represent Kuwait in their
+                        respective major fighting
+                        game tournaments.
+                    </p>
+                    <p>
+                        Now with all this experience, exposure, and good will with the community, Fikra in 2012, decided
+                        to take its next major
+                        step and create its first unique event, and the Middle East’s first and largest fighting game
+                        tournament. Kuwait Battle
+                        Royale.
+                    </p>
+                </div>
+                <div class="col-12  text-center">
+                    <p class="bg-dark p-1" style="font-size: 10px;font-weight: bold;">Some of the events that Fikra
+                        organized in it’s first 12 months are:</p>
+                    <img src="image/down-arrow.svg" alt="" srcset="">
+                </div>
+                <div class="col-12  text-center">
+                    <p class="text-dark bg-warning p-1 mt-2" style="font-size: 10px;
+    clip-path: polygon(0% 0,95% 15%,100% 100%,0% 100%);
+    font-weight: bold;">DAIGO UMEHARA STREET FIGHTER 4 & MARVEL VS CAPCOM 3 EXHIBITION:</p>
+                    <img src="image/down-arrow.svg" alt="" srcset="">
+                </div>
+                <div class="col-12 w-75 mx-auto  text-center">
+                    <p class="text-dark bg-warning p-1 mt-2" style="font-size: 10px;
+    clip-path: polygon(5% 0,100% 15%,100% 100%,0% 100%);
+    font-weight: bold">SHADOWLOO SHOWDOWN KUWAIT QUALIFIERS</p>
+                    <img src="image/down-arrow.svg" alt="" srcset="">
+                </div>
+                <div class="col-12 w-75 mx-auto  text-center">
+                    <p class="text-dark bg-warning p-1 mt-2" style="font-size: 10px;
+    clip-path: polygon(0% 0,100% 0%,95% 100%,0% 100%);
+    font-weight: bold;">TOUGEKI KUWAIT QUALIFIERS</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <h4 class="text-center mt-5 "><img src="image/Path 63.svg">Fighters Units<img class="triangle-flip"
+            src="image/Path 63.svg">
+    </h4>
+    <div class="div-skew bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="w-75 text-dark bg-warning text-center" style="font-size: 30px;font-weight: bold;">
+                        Kuwait Battle Royale
+                    </h2>
+                    <img src="image/Rectangle 108.png" class="bg-warning p-3" style="float:right" alt="">
+                    <p>Kuwait Battle Royale (KBR) was unlike any gaming event done in the Middle East at the time. With
+                        participants from all
+                        over the world, prizes exceeding 3,000KD (10,000$), and Kuwait’s first cosplay contest, it was
+                        an event never to be
+                        forgotten. It was the event that finally cemented Fikra’s place not only in the local/regional
+                        scene, but the
+                        international one as well.
+
+                    </p>
+                    <p>The memories of Kuwait Battle Royale stick in people’s minds thanks to the nail biting exhibition
+                        matches and the
+                        historic grand final matches. Kuwait Battle Royale is now considered the premier fighting game
+                        tournament of the Middle
+                        East.
+                    </p>
+                    <p>
+                        The memories of Kuwait Battle Royale stick in people’s minds thanks to the nail biting
+                        exhibition matches and the
+                        historic grand final matches. Kuwait Battle Royale is now considered the premier fighting game
+                        tournament of the Middle
+                        East.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="div-skew rev-skew bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="image/Rectangle 108.png" class="bg-primary p-3" style="float:left" alt="">
+                    <h6 class="bg-primary p-3 " style="font-size: 20px;font-weight: bold;">
+                        Games & Media Entertainment Expo
+                    </h6>
+                    <h6 class="text-dark" style="font-size: 17px;font-weight: bold;">The Dream Becomes Reality</h6>
+                    <p class="text-dark">After Kuwait Battle Royale and a few other events, Fikra could finally start
+                        working on the event that it had planned
+                        from the very beginning of its inception, Kuwait’s first gaming expo.
+
+                    </p>
+                    <p class="text-dark">The Games & Media Entertainment Expo (GX) started in 2014, and combined
+                        everything Fikra has done up to that point to
+                        create the biggest event of its kind in Kuwait. Whatever doubts people in Kuwait and outside of
+                        Kuwait had about the
+                        gaming industry in Kuwait and the Middle East were crushed by the record attendance and
+                        participation at GX.
+                    </p>
+                    <p class="text-dark">
+                        Everyone from game developers, artists, gamers, cosplayers, and more, celebrated gaming in
+                        Kuwait and came together as
+                        one community to show their passion and skills to the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="div-skew bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="w-75 text-dark bg-warning text-center" style="font-size: 30px;font-weight: bold;">
+                        Video Production
+                    </h2>
+                    <img src="image/Rectangle 108.png" class="bg-warning p-3" style="float:right" alt="">
+                    <p>Fikra started video production at the end of 2012 as a way to showcase and expose the gaming
+                        community in Kuwait. First
+                        it started with a short documentary/interview with pro players during Kuwait Battle Royale 2012,
+                        then moved onto short
+                        and quick video reports summarizing events, as well as motivational videosand computer graphics
+                        trailers for upcoming
+                        events.
+
+                    </p>
+                    <p>Fikra plans to increase video production in the future, specifically more documentaries and CG
+                        trailers related to
+                        either the gaming industry or Fikra’s own events.
+
+                        You can find our videos on our YouTube channel:
+
+
+                    </p>
+                    <h2>
+                        <a href="https://www.youtube.com/fikrakw" class="text-white">
+                            www.youtube.com/fikrakw
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="div-skew rev-skew bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="image/Rectangle 108.png" class="bg-primary p-3" style="float:left" alt="">
+                    <h6 class="bg-primary p-3 " style="font-size: 20px;font-weight: bold;">
+                        Games & Media Entertainment Expo
+                    </h6>
+                    <h6 class="text-dark" style="font-size: 17px;font-weight: bold;">The Dream Becomes Reality</h6>
+                    <p class="text-dark">After Kuwait Battle Royale and a few other events, Fikra could finally start
+                        working on the event that it had planned
+                        from the very beginning of its inception, Kuwait’s first gaming expo.
+
+                    </p>
+                    <p class="text-dark">The Games & Media Entertainment Expo (GX) started in 2014, and combined
+                        everything
+                        Fikra has done up to that point to
+                        create the biggest event of its kind in Kuwait. Whatever doubts people in Kuwait and outside of
+                        Kuwait had about the
+                        gaming industry in Kuwait and the Middle East were crushed by the record attendance and
+                        participation at GX.
+                    </p>
+                    <p class="text-dark">
+                        Everyone from game developers, artists, gamers, cosplayers, and more, celebrated gaming in
+                        Kuwait
+                        and came together as
+                        one community to show their passion and skills to the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <h4 class="text-center"><img src="image/Path 63.svg">Our Future<img class="triangle-flip" src="image/Path 63.svg">
+    </h4>
+    <img src="image/thinkmake.png" style="width:100%" alt="">
+    <div class="container text-center mt-5 mb-5" style="font-size: 14px;"><p>
+        With the foundation for the industry now set, and with multiple successful events year after year, Fikra will
+        continue
+        to grow and expand upon the foundations it has laid, and will always strive to set a high standard in the fields
+        that it
+        enters.
+    </p>
+    <p>
+        With the biggest events in Kuwait and the Middle East, Fikra plans to add Kuwait as a yearly destination for
+        visitors
+        and exhibitors.
+    </p>
+    <img src="image/timeline.png" class="w-100" alt="">
+    </div>
+    <div style="text-align: right;" class="mb-5">
+    <img src="image/back-to-top.svg" alt="">
+</div>    
+    <footer>
+
+        <div class="container p-4">
+
+            <div class="row">
+                <div class="col-12">
+                    <h4> Information</h4>
+
+                    <div><a class="btn btn-link" href="#" role="button">button</a></div>
+                    <div><a class="btn btn-link" href="#" role="button">button</a></div>
+                    <div><a class="btn btn-link" href="#" role="button">button</a></div>
+                    <div><a class="btn btn-link" href="#" role="button">button</a></div>
+
+                </div>
+                <div class="col-12">
+                    <h4> Fikra events</h4>
+                    <p>Aliquip et officia Lorem irure irure. Occaecat voluptate minim deserunt ullamco deserunt. Fugiat
+                        pariatur anim laboris officia do amet consectetur.</p>
+
+                    <div><a class="btn btn-link" href="#" role="button">button</a></div>
+                    <div><a class="btn btn-link" href="#" role="button">button</a></div>
+                    <div><a class="btn btn-link" href="#" role="button">button</a></div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

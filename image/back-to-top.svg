@@ -1,0 +1,5 @@
+<svg id="Group_404" data-name="Group 404" xmlns="http://www.w3.org/2000/svg" width="44.411" height="45.777" viewBox="0 0 44.411 45.777">
+  <ellipse id="Ellipse_15" data-name="Ellipse 15" cx="22.206" cy="22.889" rx="22.206" ry="22.889" transform="translate(0 0)" fill="#fff"/>
+  <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M3.821,11.083,12.21,2.7A1.585,1.585,0,1,0,9.966.463l-9.5,9.5a1.581,1.581,0,0,0-.046,2.185l9.544,9.564A1.585,1.585,0,1,0,12.2,19.472Z" transform="translate(33.215 10.346) rotate(90)"/>
+  <text id="Back" transform="translate(35.13 34.963)" font-size="11" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-26.297" y="0">Back</tspan></text>
+</svg>
