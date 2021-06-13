@@ -354,3 +354,37 @@ input[type='radio']:checked:after {
 .event-schedule-list-text{
     height: 5rem;
 }
+.pill-button .btn{
+    border-radius: 1rem;
+    border:1px solid #0078CC;
+    background:transparent;
+    color: #fff;
+}
+.pill-button  .active{
+    background-color: #DCCC01;
+    color: #000;
+}
+
+.featured-list{
+    list-style-image: url('image/blue-star.svg');    
+}
+.rev-skew .featured-list {
+    list-style-image: url('image/yellow-star.svg');
+}
+dd ul li{
+    list-style: none;
+    margin-bottom: 5px;
+    color: black;
+}
+dd ul li::before {
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
