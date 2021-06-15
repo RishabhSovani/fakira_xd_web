@@ -169,12 +169,15 @@ h1 {
 .btn-outline-warning {
     border: #DCCC01 solid 2px;
 }
-.btn-outline-primary{    
+
+.btn-outline-primary {
     border: #0d6efd solid 2px
 }
+
 .artwork-submit {
     width: 90%
 }
+
 /* radio button  */
 input[type='radio']:after {
     width: 15px;
@@ -203,6 +206,7 @@ input[type='radio']:checked:after {
     visibility: visible;
     border: 2px solid #1CBFBC;
 }
+
 /* radio button end */
 .social-btn .btn {
     border-radius: 0 !important;
@@ -210,11 +214,12 @@ input[type='radio']:checked:after {
     font-size: 5px;
 }
 
-.triangle-flip{
+.triangle-flip {
     transform: rotate(180deg);
-    margin-left:5px ;
+    margin-left: 5px;
 }
-.like-price{
+
+.like-price {
     color: #1090F2;
     font-weight: bolder;
     font-size: 35px;
@@ -293,18 +298,18 @@ input[type='radio']:checked:after {
     top: 1.5rem
 }
 
-.trending-blue .trending-news-list-text::after {    
-        left: 12rem;
-        content: '';
-        position: absolute;
-        width: 2rem;
-        height: 100%;
-        z-index: -1;
-        background: #0d6efd;
-        overflow: hidden;
-        top: 0rem;
-        margin: 0;
-        left: 11rem;
+.trending-blue .trending-news-list-text::after {
+    left: 12rem;
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 100%;
+    z-index: -1;
+    background: #0d6efd;
+    overflow: hidden;
+    top: 0rem;
+    margin: 0;
+    left: 11rem;
 }
 
 
@@ -328,7 +333,7 @@ input[type='radio']:checked:after {
 .trending-yellow .trending-news-list-text {
     position: relative;
     top: 1.5rem;
-    background-color:#DCCC01;
+    background-color: #DCCC01;
     color: black;
 }
 
@@ -345,37 +350,44 @@ input[type='radio']:checked:after {
     margin: 0;
     left: 11rem;
 }
-.event-schedule-list{
+
+.event-schedule-list {
     position: relative;
     height: 6rem;
     bottom: 6rem;
     left: 2.5rem;
 }
-.event-schedule-list-text{
+
+.event-schedule-list-text {
     height: 5rem;
 }
-.pill-button .btn{
+
+.pill-button .btn {
     border-radius: 1rem;
-    border:1px solid #0078CC;
-    background:transparent;
+    border: 1px solid #0078CC;
+    background: transparent;
     color: #fff;
 }
-.pill-button  .active{
+
+.pill-button .active {
     background-color: #DCCC01;
     color: #000;
 }
 
-.featured-list{
-    list-style-image: url('image/blue-star.svg');    
+.featured-list {
+    list-style-image: url('image/blue-star.svg');
 }
+
 .rev-skew .featured-list {
     list-style-image: url('image/yellow-star.svg');
 }
-dd ul li{
+
+dd ul li {
     list-style: none;
     margin-bottom: 5px;
     color: black;
 }
+
 dd ul li::before {
     content: "";
     border-color: transparent #111;
@@ -387,4 +399,50 @@ dd ul li::before {
     left: -1em;
     top: 0.9em;
     position: relative;
+}
+
+.model-box-logo {
+    margin: 0 auto;
+    display: block;
+    height: 5rem;
+}
+
+.modal-open .container-fluid,
+.modal-open .container {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+#exampleModal .modal-content {
+    background: transparent;
+    border-radius: 0px;
+    border: none;
+}
+
+.form-check .form-check-input {
+    margin-left: 0px;
+    margin-right: 5px;
+    padding: 10px;
+
+}
+
+.form-check-input:checked {
+    background-color: #DCCC01;
+    border-color: #DCCC01;
+}
+.modal-header{
+    border: none;
+}
+.nav-tabs,
+.nav-pills .nav-link {
+    border: none;
+    border-radius: 0;
+}
+.btn-close{    
+    font-size: 1.5rem;
+    background-image: url(image/close.svg);
+    opacity: 1;
 }
