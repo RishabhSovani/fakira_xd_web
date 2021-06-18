@@ -433,16 +433,46 @@ dd ul li::before {
     background-color: #DCCC01;
     border-color: #DCCC01;
 }
-.modal-header{
+
+.modal-header {
     border: none;
 }
+
 .nav-tabs,
 .nav-pills .nav-link {
     border: none;
     border-radius: 0;
 }
-.btn-close{    
+
+.btn-close {
     font-size: 1.5rem;
     background-image: url(image/close.svg);
     opacity: 1;
+}
+
+#navbarTogglerDemo01 .nav-item .nav-link::after {
+    right: 0;
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-bottom: 2rem solid #DCCC01;
+    border-left: 100vw solid transparent;
+    margin-top: 1rem;
+    }
+#navbarTogglerDemo01 .nav-item {
+    padding: 1rem;
+}
+#navbarTogglerDemo01 .nav-item .active::after {
+     border-bottom: 2rem solid #0d6efd !important;
+}
+#navbarTogglerDemo01 .nav-item .active{
+    color: #0d6efd;
+}
+#navbarTogglerDemo01 .nav-item a{
+    color: #DCCC01;
+    font-weight: bold;
+    text-transform:uppercase;
+
 }

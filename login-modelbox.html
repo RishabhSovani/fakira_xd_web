@@ -15,7 +15,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="image/mobile_logo.svg" alt="" width="137" height="53">
             </a>
@@ -26,15 +26,29 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+                <div class="mt-5 mb-5">
+                    <button type="button" class="btn btn-outline-primary" style="width: 100%;background-color: #000;color:#DCCC01;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        LOGIN
+                    </button>
+                </div>
+                <h4 class="text-center"><img src="image/Path 63.svg">&nbsp;Menu<img class="triangle-flip"
+                        src="image/Path 63.svg"></h4>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                                        <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Events / schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">news</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact us</a>
                     </li>
                 </ul>
             </div>
@@ -42,7 +56,7 @@
         <div class="container-fluid card-text">
             &LeftAngleBracket; Back
         </div>
-    </nav>   
+    </nav>
     <!-- login model box -->
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -61,92 +75,95 @@
                 </div>
                 <div class="modal-body">
 
-                <div role="tabpanel">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-pills nav-fill nav-justified nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link bg-white" aria-current="page" href="#login">Login</a>
-                        </li>
-                        <li class="nav-item bg-primary text-white">
-                            <a class="nav-link text-white" href="#signup">Sign Up</a>
-                        </li>
-                    </ul>
-                
-                    <!-- Tab panes -->
-                    <div class="tab-content ">
-                        <div role="tabpanel" class="bg-primary tab-pane active " id="login">
-                            <form action="" method="POST" role="form">
-                                <div class="input-group p-3">
-                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                        aria-describedby="basic-addon1">
-                                </div>
-                                <div class="input-group p-3">
-                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                        aria-describedby="basic-addon1">
-                                </div>
-                                <div class="form-check p-3">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
-                                        Remember me
-                                    </label>
-                                    <a href="#" class="float-end"><b>Forgot your password</b></a>
-                                    <div class="form-group mt-3">
-                                        <button type="submit" class="btn btn-square btn-warning text-white">Login</button>
+                    <div role="tabpanel">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills nav-fill nav-justified nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link bg-white" aria-current="page" href="#login">Login</a>
+                            </li>
+                            <li class="nav-item bg-primary text-white">
+                                <a class="nav-link text-white" href="#signup">Sign Up</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content ">
+                            <div role="tabpanel" class="bg-primary tab-pane active " id="login">
+                                <form action="" method="POST" role="form">
+                                    <div class="input-group p-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
-                                    <div class="form-check-label  mt-1 text-center">
-                                        Not a member ?
-                                        <a href="#">
-                                            <strong>Sign Up</strong>
-                                        </a>
+                                    <div class="input-group p-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
                                     </div>
-                                </div>
-                
-                            </form>
-                
+                                    <div class="form-check p-3">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="" id=""
+                                                value="checkedValue" checked>
+                                            Remember me
+                                        </label>
+                                        <a href="#" class="float-end"><b>Forgot your password</b></a>
+                                        <div class="form-group mt-3">
+                                            <button type="submit"
+                                                class="btn btn-square btn-warning text-white">Login</button>
+                                        </div>
+                                        <div class="form-check-label  mt-1 text-center">
+                                            Not a member ?
+                                            <a href="#">
+                                                <strong>Sign Up</strong>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                            <div role="tabpanel " class=" bg-warning tab-pane" id="signup">
+                                <form action="" method="POST" role="form">
+                                    <div class="input-group p-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group p-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group p-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="form-check p-3">
+                                        <div class="form-group mt-3">
+                                            <button type="submit"
+                                                class="btn btn-square btn-primary text-white">Login</button>
+                                        </div>
+                                        <div class="form-check-label  mt-1 text-center text-dark">
+                                            Already have an account?
+                                            <a href="#">
+                                                <strong class="text-dark">Sign Up</strong>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
                         </div>
-                    <div role="tabpanel " class=" bg-warning tab-pane" id="signup">
-                        <form action="" method="POST" role="form">
-                            <div class="input-group p-3">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group p-3">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                            <div class="input-group p-3">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                            <div class="form-check p-3">
-                                <div class="form-group mt-3">
-                                    <button type="submit" class="btn btn-square btn-primary text-white">Login</button>
-                                </div>
-                                <div class="form-check-label  mt-1 text-center text-dark">
-                                    Already have an account?
-                                    <a href="#">
-                                        <strong class="text-dark">Sign Up</strong>
-                                    </a>
-                                </div>
-                            </div>
-                    
-                        </form>
-                    </div>
-                        
                     </div>
                 </div>
-                </div>                
             </div>
         </div>
     </div>
     <!-- login model box end -->
 
-    
+
 
 
     <!-- Optional JavaScript; choose one of the two! -->
